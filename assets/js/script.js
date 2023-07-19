@@ -43,6 +43,25 @@ $(function () {
     $(this).val(description);
   });
 
+  // add save all button to bootom of page
+  var saveAllBtn = $("<button>");
+  saveAllBtn.addClass("saveAllBtn");
+  saveAllBtn.text("Save All");
+  $(".container").append(saveAllBtn);
+
+  // save all button event listener
+  $(".saveAllBtn").on("click", function () {
+    // Loop through each time-block
+    $(".time-block").each(function () {
+      // Get the id of the time-block
+      var timeBlockId = $(this).attr("id");
+      // Get the description from the textarea in the time-block
+      var description = $(this).val();
+      // Save the description in local storage using the time-block id as the key
+      localStorage.setItem(timeBlockId, description);
+    });
+  });
+
   // add clear button to bottom of page
   var clearBtn = $("<button>");
   clearBtn.addClass("clearBtn");
