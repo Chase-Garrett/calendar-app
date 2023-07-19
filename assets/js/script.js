@@ -42,5 +42,19 @@ $(function () {
     // Set the value of the textarea in the time-block
     $(this).val(description);
   });
+
+  // add clear button to bottom of page
+  var clearBtn = $("<button>");
+  clearBtn.addClass("clearBtn");
+  clearBtn.text("Clear Schedule");
+  $(".container").append(clearBtn);
+  
+  // clear the user input from local storage when the user clicks the clear button
+  $(".clearBtn").on("click", function () {
+  // Clear the description from local storage
+  localStorage.clear();
+  // Reload the page
+  location.reload();
+  });
   
 });
