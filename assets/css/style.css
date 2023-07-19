@@ -57,3 +57,18 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* center clearBtn and utilize same color formatting as saveBtn*/
+.clearBtn {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.clearBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
