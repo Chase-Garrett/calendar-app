@@ -58,7 +58,7 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* center clearBtn and utilize same color formatting as saveBtn*/
+/* clearBtn utilizes same color formatting as saveBtn*/
 .clearBtn {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
